@@ -18,6 +18,9 @@
     body{
         background-color:azure;
     }
+    .nav-slide-container{
+        width: 100%;
+    }
 }
 @media(max-width:400px){
     body{
