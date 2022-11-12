@@ -7,10 +7,28 @@
 .main-head {
     width: 100%;
 }
+
 .main-menu {
     width: 100%;
     height: auto;
     background-color: black;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.main-menu-slide {
+    position: sticky;
+    left: 0;
+    top: 0;
+    animation: head-ani 0.5s linear 0s 1 forwards;
+}
+@keyframes head-ani{
+    0%{
+        transform: translateY(-100%);
+    }
+    100%{
+        transform: translateY(0);
+    }
 }
 .nav-list .nav-list-items{
     padding: 25px 0px;
@@ -36,4 +54,23 @@
 .nav-list .nav-list-items a:hover::before,.nav-list .nav-list-items a:hover{
     width: 100%;
     color: var(--global-main-text-and-bg-color);
+}
+.nar-slide-toggle-btn {
+    display: none;
+}
+.btn-container {
+    padding: 5px 30px 5px 0px;
+}
+.btn-container div{
+    width: 25px;
+    height: 3px;
+    border-radius: 3px;
+    background-color: #fff;
+    margin: 5px 0px;
+}
+.btn-container div:nth-child(2){
+    width: 20px;
+}
+.btn-container:hover div{
+    background-color: var(--global-main-text-and-bg-color);
 }
