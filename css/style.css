@@ -55,11 +55,14 @@
     width: 100%;
     color: var(--global-main-text-and-bg-color);
 }
+.nav-list .nav-list-items a:hover::before,.nav-list .nav-list-items i{
+    margin-left: 10px;
+}
 .nar-slide-toggle-btn {
     display: none;
 }
 .btn-container {
-    padding: 5px 30px 5px 0px;
+    padding: 30px;
 }
 .btn-container div{
     width: 25px;
@@ -73,4 +76,49 @@
 }
 .btn-container:hover div{
     background-color: var(--global-main-text-and-bg-color);
+}
+.nav-slide-container {
+    width: 400px;
+    background-color: #000;
+    padding: 0px 20px 50px 20px;
+    position: absolute;
+    left: -100%;
+    top: 0;
+    transition: all 0.5s linear 0s;
+}
+.nav-slide-container-show-hide{
+    left: 0%;
+}
+.logoAndCloseBtn-container .close-btn i {
+    font-size: 20px;
+    cursor: pointer;
+}
+.logoAndCloseBtn-container .close-btn i:hover{
+    color: var(--global-main-text-and-bg-color);
+}
+.slide-navBar {
+    padding-top: 30px;
+}
+.slide-nav-list {
+    width: 100%;
+}
+.slide-nav-list .slide-nav-list-items{
+    padding: 0px 10px;
+}
+.slide-nav-list .slide-nav-list-items a{
+    width: 100%;
+    padding: 10px 0px;
+}
+.slide-nav-list .slide-nav-list-items div {
+    width: 50px;
+}
+.slide-nav-list .slide-nav-list-items div i{
+    padding: 8px;
+    transition: all 0.3s linear 0s;
+    color: #fff;
+}
+.slide-nav-list .slide-nav-list-items div .angle-rotate {
+    color: var(--global-main-text-and-bg-color);
+    transform: rotate(180deg);
+
 }
