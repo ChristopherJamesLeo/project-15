@@ -238,7 +238,32 @@
     background-color: var(--global-main-text-and-bg-color);
     color: #fff;
 }
-/* #firstname ,#lastname {
-    width: 50%;
-    display: inline;
-} */
+.section-content-container {
+    height: 130vh;
+    /* background-color: antiquewhite; */
+    background-image: url("../img/bg_image/bg1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.section-content {
+    width: 1000px;
+}
+.section-content h3{
+    color: var(--global-main-text-and-bg-color);
+    font-size: 30px;
+}
+.section-content h1{
+    color: var(--global-main-text-and-bg-color);
+    font-size: 100px;
+}
+.section-content p {
+    color: #fff;
+    font-size: 20px;
+}
+.section-content a {
+    color: #fff;
+    margin-top: 20px;
+    background-color: var(--global-main-text-and-bg-color);
+    padding: 20px 30px;
+}
