@@ -22,12 +22,12 @@
         </div>
         <nav class="navBar">
             <ul class="nav-list flex items-center">
-                <li class="nav-list-items"><a href="../index.html" class="font-medium uppercase tracking-wide text-white">home</a></li>
+                <li class="nav-list-items"><a href="./home_page.php" class="font-medium uppercase tracking-wide text-white">home</a></li>
                 <li class="nav-list-items"><a href="#" class="font-medium uppercase tracking-wide text-white">About<i class="fas fa-angle-down inline-block"></i></a></li>
                 <li class="nav-list-items"><a href="#" class="font-medium uppercase tracking-wide text-white">Our Class</a></li>
                 <li class="nav-list-items"><a href="#" class="font-medium uppercase tracking-wide text-white">Pricing Table</a></li>
                 <li class="nav-list-items"><a href="#" class="font-medium uppercase tracking-wide text-white">Blog<i class="fas fa-angle-down inline-block"></i></a></li>
-                <li class="nav-list-items"><a href="./contactUs.html" class="font-medium uppercase tracking-wide text-white">Contact Us</a></li>
+                <li class="nav-list-items"><a href="./contactUs.php" class="font-medium uppercase tracking-wide text-white">Contact Us</a></li>
             </ul>
         </nav>
         <div class="nar-slide-toggle-btn">
@@ -41,7 +41,7 @@
             <div class="logoAndCloseBtn-container flex justify-between items-center">
                 <div class="logoImg-container">
                     <div class="logo-img">
-                        <img src="./img/cropped-logo02.png" width="100%" height="100%" alt="logo">
+                        <img src="../img/cropped-logo02.png" width="100%" height="100%" alt="logo">
                     </div>
                 </div>
                 <div class="close-btn">

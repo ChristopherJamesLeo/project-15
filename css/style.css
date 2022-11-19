@@ -197,6 +197,7 @@
     display: block;
     width: 100%;
 }
+
 .content-form .form-group {
     width: 100%;
 }
@@ -229,7 +230,7 @@
     /* resize: none; */
 }
 
-.content-form button{
+.logIn-form-group button ,.content-form button{
     margin: 20px 0px;
     padding: 10px 30px;
     font-weight: bold;
@@ -266,4 +267,54 @@
     margin-top: 20px;
     background-color: var(--global-main-text-and-bg-color);
     padding: 20px 30px;
+}
+.modelBox-container {
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 100;
+    transform: scale(0) translateY(-100%);
+    
+    opacity: 0;
+    transition: all 0.5s ease 0s;
+
+}
+.modelBox-container-ani {
+    transform: scale(1) translateY(0%);
+
+    opacity: 1;
+}
+.modelBox-container {
+    width: 100%;
+    height: 100vh;
+}
+.logIn_page {
+    width: 500px;
+}
+.adm_logIn_page {
+    display: none;
+}
+.logIn_page h1{
+    font-size: 30px;
+}
+.logIn_page .logIn-form-group{ 
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.logIn_page .logIn-form-group .form-group label{
+    display: block;
+    padding: 5px 0px;
+}
+.logIn_page .logIn-form-group .form-group input {
+    padding: 10px;
+    display: block;
+    width: 100%;
+}
+.modelClose {
+    color: #fff;
+    right: -20px;
+    top: -20px;
+    cursor: pointer;
+}
+.modelClose:hover,.modelClose:focus{
+    color: #F34E3A;
 }
