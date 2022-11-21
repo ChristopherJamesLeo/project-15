@@ -1,0 +1,32 @@
+@media(max-width:1000px){
+    body{
+        background-color: aqua;
+    }
+}
+@media(max-width:800px){
+    body{
+        background-color:aquamarine;
+    }
+    .navBar {
+        display: none;
+    }
+    .nar-slide-toggle-btn {
+        display: block;
+    }
+}
+@media(max-width:600px){
+    body{
+        background-color:azure;
+    }
+    .nav-slide-container{
+        width: 100%;
+    }
+}
+@media(max-width:400px){
+    body{
+        background-color:blueviolet;
+    }
+    /* .nav-slide-container{
+        width: 300px;
+    } */
+}
