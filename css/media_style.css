@@ -3,7 +3,7 @@
         background-color: aqua;
     }
 }
-@media(max-width:800px){
+@media(max-width:768px){
     body{
         background-color:aquamarine;
     }
@@ -13,8 +13,23 @@
     .nar-slide-toggle-btn {
         display: block;
     }
+    .sec-section-content {
+        flex-direction: column;
+    }
+    .sec-content {
+        width: 100%;
+        height: 450px;
+    }
+    .flex-content {
+        flex-direction: column;
+    }
+    .pricing-contents-container {
+        background-color: #29282D;
+        width: 100%;
+        padding: 30px;
+    }
 }
-@media(max-width:600px){
+@media(max-width:640px){
     body{
         background-color:azure;
     }
@@ -26,7 +41,5 @@
     body{
         background-color:blueviolet;
     }
-    /* .nav-slide-container{
-        width: 300px;
-    } */
+
 }
