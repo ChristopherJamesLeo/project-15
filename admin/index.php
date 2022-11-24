@@ -1,87 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home page</title>
-    <link rel="shortcut icon" href=".png" type="image/x-icon">
-    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/media_style.css">
-    <script src="./app.js/home.js" defer></script>
+    <head>
+        <title>Home</title>
+        <link rel="shortcut icon" href=".png" type="image/x-icon">
+        <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="../css/style.css">
+
+        <link rel="stylesheet" href="./css/media-style.css">
+        <link rel="stylesheet" href="../css/media-style.css">
+        <script src="../app.js/home.js" defer></script>
+    </head>
 </head>
 <body>
-    <menu class="main-menu flex justify-between items-center">
-        <div class="logoImg-container">
-            <div class="logo-img">
-                <img src="./img/cropped-logo02.png" width="100%" height="100%" alt="logo">
-            </div>
-        </div>
-        <nav class="navBar">
-            <ul class="nav-list flex items-center">
-                <li class="nav-list-items"><a href="./index.html" class="nav-list-items-links font-medium uppercase tracking-wide text-white">home</a></li>
-                <li class="nav-list-items relative"><a href="./html/aboutUs.html" class="nav-list-items-links font-medium uppercase tracking-wide text-white">About<i class="fas fa-angle-down inline-block"></i></a>
-                    <!-- <ul class="dropdown-menu absolute">
-                        <li class="dropdown-item"><a href="#" class="dropdown-link">About</a></li>
-                        <li class="dropdown-item"><a href="#" class="dropdown-link">About</a></li>
-                        <li class="dropdown-item"><a href="#" class="dropdown-link">About</a></li>
-                    </ul> -->
-                </li>
-                <li class="nav-list-items"><a href="./html/ourclass.html" class="nav-list-items-links font-medium uppercase tracking-wide text-white">Our Class</a></li>
-                <li class="nav-list-items"><a href="./html/pricing_table.html" class="nav-list-items-links font-medium uppercase tracking-wide text-white">Pricing Table</a></li>
-                <li class="nav-list-items relative "><a href="#" class="nav-list-items-links font-medium uppercase tracking-wide text-white">Blog<i class="fas fa-angle-down inline-block"></i></a>
-                    <!-- <ul class="dropdown-menu absolute">
-                        <li class="dropdown-item"><a href="#" class="dropdown-link">About</a></li>
-                        <li class="dropdown-item"><a href="#" class="dropdown-link">About</a></li>
-                        <li class="dropdown-item"><a href="#" class="dropdown-link">About</a></li>
-                    </ul> -->
-                </li>
-                <li class="nav-list-items"><a href="./html/contactUs.html" class="nav-list-items-links font-medium uppercase tracking-wide text-white">Contact Us</a></li>
-            </ul>
-        </nav>
-        <div class="nar-slide-toggle-btn">
-            <div class="btn-container">
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-        </div>
-        <div class="nav-slide-container">
-            <div class="logoAndCloseBtn-container flex justify-between items-center">
-                <div class="logoImg-container">
-                    <div class="logo-img">
-                        <img src="./img/cropped-logo02.png" width="100%" height="100%" alt="logo">
-                    </div>
-                </div>
-                <div class="close-btn">
-                    <i class="fas fa-times text-white"></i>
-                </div>
-            </div>
-            <nav class="slide-navBar">
-                <ul class="slide-nav-list">
-                    <li class="slide-nav-list-items"><a href="./index.html" class="nav-list-items-links font-medium uppercase tracking-wide text-white border-b inline-block">home</a></li>
-                    <li class="slide-nav-list-items flex justify-between items-center"><a href="./html/aboutUs.html" class="nav-list-items-links font-medium uppercase tracking-wide text-white border-b inline-block">About</a><div class="grid place-items-center border-l"><i class="fas fa-angle-down inline-block"></i></div></li>
-                    <li class="slide-nav-list-items"><a href="./html/ourclass.html" class="nav-list-items-links font-medium uppercase tracking-wide text-white border-b inline-block">Our Class</a></li>
-                    <li class="slide-nav-list-items"><a href="./html/pricing_table.html" class="nav-list-items-links font-medium uppercase tracking-wide text-white border-b inline-block">Pricing Table</a></li>
-                    <li class="slide-nav-list-items flex justify-between items-center"><a href="#" class="nav-list-items-links font-medium uppercase tracking-wide text-white border-b inline-block">Blog</a><div class="grid place-items-center border-l"><i class="fas fa-angle-down inline-block"></i></div></li>
-                    <li class="slide-nav-list-items"><a href="./html/contactUs.html" class="nav-list-items-links font-medium uppercase tracking-wide text-white inline-block">Contact Us</a></li>
-                </ul>
-            </nav>
-        </div>
-    </menu>
-    <div id="modalBox-container" class="modalBox-container fixed left-0 top-0 place-items-center">
-        <div class="modal-box flex flex-col justify-center items-center">
-            <div class="modal-content capatilize text-center">
-                if you want to enter to admin control <br>
-                you will be change your rout <br>
-                <i class="underline font-bold">( localhost/project-15/admin/ )</i>
-            </div>
-            <div id="close-btn" class="close-btn rounded-lg bg-lime-700">CLOSE MODAL</div>
-        </div>
-    </div>
+
+    <?php
+        include "./menu.php"
+    ?>
     <main>
         <section class="main-section-container">
             <div class="main-section">
@@ -154,13 +92,21 @@
                         </p>
                     </div>
                     <div class="flex-content-items-container flex justify-center items-start gap-y-12">
+
+                        <?php
+                        include "config.php";
+                        $sql = ("SELECT * FROM trainers");
+                        $result = mysqli_query($conn , $sql) or die("connection fail");
+                        if(mysqli_num_rows($result) > 0){
+                            while($row = mysqli_fetch_assoc($result)){
+                        ?>
                         <div class="team-contents-container text-center">
                             <div class="team-contents w-full h-full">
                                 <div class="team-img-container rounded-full">
-                                    <a href="#" class="img-link w-full h-full relative"><img src="./img/team-01-1.jpg" class="rounded-full w-full h-full relative person-img" alt="team-01-1.jpg"></a> 
+                                    <a href="#" class="img-link w-full h-full relative"><img src="../img/<?php echo $row['image']; ?>" class="rounded-full w-full h-full relative person-img" alt="team-01-1.jpg"></a> 
                                 </div>
-                                <a href="#" class="team-person-name font-semibold">Erica Greene</a>
-                                <p class="font-semibold tracking-widest">CROSSFIT EXPERT</p>
+                                <a href="#" class="team-person-name font-semibold"><?php echo $row["firstname"] ." " . $row["lastname"]; ?></a>
+                                <p class="font-semibold tracking-widest"><?php echo $row["type"]; ?></p>
                                 <div class="team-content-link-group">
                                     <a href="#"><i class="fab fa-facebook"></i></a>
                                     <a href="#"><i class="fab fa-twitter"></i></a>
@@ -168,76 +114,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="team-contents-container text-center">
-                            <div class="team-contents w-full h-full">
-                                <div class="team-img-container rounded-full">
-                                    <a href="#" class="img-link w-full h-full relative"><img src="./img/team-02.jpg" class="rounded-full w-full h-full relative person-img" alt="team-01-1.jpg"></a> 
-                                </div>
-                                <a href="#" class="team-person-name font-semibold">Steven Rottman</a>
-                                <p class="font-semibold tracking-widest">COMBAT TRAINER</p>
-                                <div class="team-content-link-group">
-                                    <a href="#"><i class="fab fa-facebook"></i></a>
-                                    <a href="#"><i class="fab fa-twitter"></i></a>
-                                    <a href="#"><i class="fab fa-youtube"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="team-contents-container text-center">
-                            <div class="team-contents w-full h-full">
-                                <div class="team-img-container rounded-full">
-                                    <a href="#" class="img-link w-full h-full relative"><img src="./img/team-05.jpg" class="rounded-full w-full h-full relative person-img" alt="team-01-1.jpg"></a> 
-                                </div>
-                                <a href="#" class="team-person-name font-semibold">Roderick Burton</a>
-                                <p class="font-semibold tracking-widest">YOGA INSTRUCTOR</p>
-                                <div class="team-content-link-group">
-                                    <a href="#"><i class="fab fa-facebook"></i></a>
-                                    <a href="#"><i class="fab fa-twitter"></i></a>
-                                    <a href="#"><i class="fab fa-youtube"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="team-contents-container text-center">
-                            <div class="team-contents w-full h-full">
-                                <div class="team-img-container rounded-full">
-                                    <a href="#" class="img-link w-full h-full relative"><img src="./img/team-new-03.jpg" class="rounded-full w-full h-full relative person-img" alt="team-01-1.jpg"></a> 
-                                </div>
-                                <a href="#" class="team-person-name font-semibold">Deborah Adams</a>
-                                <p class="font-semibold tracking-widest">YOGA INSTRUCTOR</p>
-                                <div class="team-content-link-group">
-                                    <a href="#"><i class="fab fa-facebook"></i></a>
-                                    <a href="#"><i class="fab fa-twitter"></i></a>
-                                    <a href="#"><i class="fab fa-youtube"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="team-contents-container text-center">
-                            <div class="team-contents w-full h-full">
-                                <div class="team-img-container rounded-full">
-                                    <a href="#" class="img-link w-full h-full relative"><img src="./img/team-new-06.jpg" class="rounded-full w-full h-full relative person-img" alt="team-new-06"></a> 
-                                </div>
-                                <a href="#" class="team-person-name font-semibold">Raymond Montano</a>
-                                <p class="font-semibold tracking-widest">COMBAT TRAINER</p>
-                                <div class="team-content-link-group">
-                                    <a href="#"><i class="fab fa-facebook"></i></a>
-                                    <a href="#"><i class="fab fa-twitter"></i></a>
-                                    <a href="#"><i class="fab fa-youtube"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="team-contents-container text-center">
-                            <div class="team-contents w-full h-full">
-                                <div class="team-img-container rounded-full">
-                                    <a href="#" class="img-link w-full h-full relative"><img src="./img/team-04-600x780-1.jpg" class="rounded-full w-full h-full relative person-img" alt="team-04-600x780-1.jpg"></a> 
-                                </div>
-                                <a href="#" class="team-person-name font-semibold">Beatrice Dowdy</a>
-                                <p class="font-semibold tracking-widest">CROSSFIT EXPERT</p>
-                                <div class="team-content-link-group">
-                                    <a href="#"><i class="fab fa-facebook"></i></a>
-                                    <a href="#"><i class="fab fa-twitter"></i></a>
-                                    <a href="#"><i class="fab fa-youtube"></i></a>
-                                </div>
-                            </div>
-                        </div>
+                        <?php
+                            }
+                        }
+
+                        ?>
                     </div>
                 </div>
             </div>
@@ -250,8 +131,8 @@
                             <div class="flex-left-content">
                                 <div class="gym-img-container w-full h-full">
                                     <div class="gym-img relative w-full h-full">
-                                        <img src="./img/home1.jpg" class="gym-img-main" width="100%" height="100%" alt="home1" title="home 1">
-                                        <img src="./img/bg_image/circle-1-min.png" class="gym-img-back-bg absolute " alt="">
+                                        <img src="../img/home1.jpg" class="gym-img-main" width="100%" height="100%" alt="home1" title="home 1">
+                                        <img src="../img/bg_image/circle-1-min.png" class="gym-img-back-bg absolute " alt="">
                                     </div>
                                 </div>
                             </div>
@@ -276,8 +157,8 @@
                             <div class="flex-right-content">
                                 <div class="gym-img-container w-full h-full">
                                     <div class="gym-img relative w-full h-full">
-                                        <img src="./img/home2.jpg" class="gym-img-main" width="100%" height="100%" alt="home1" title="home 2">
-                                        <img src="./img/bg_image/circle-1-min.png" class="gym-img-back-bg absolute " alt="">
+                                        <img src="../img/home2.jpg" class="gym-img-main" width="100%" height="100%" alt="home1" title="home 2">
+                                        <img src="../img/bg_image/circle-1-min.png" class="gym-img-back-bg absolute " alt="">
                                     </div>
                                 </div>
                             </div>
@@ -292,19 +173,19 @@
                     <div class="sponsor-flex-content flex justify-between items-start">
                         <div class="sponsor-company-main-container flex">
                             <div class="sponsor-company-container grid place-items-center ">
-                                <img src="./img/h3-client-2.png" width="100%" height="100%" alt="h3-client-2">
+                                <img src="../img/h3-client-2.png" width="100%" height="100%" alt="h3-client-2">
                             </div>
                             <div class="sponsor-company-container grid place-items-center ">
-                                <img src="./img/h3-client-3.png" width="100%" height="100%" alt="h3-client-2">
+                                <img src="../img/h3-client-3.png" width="100%" height="100%" alt="h3-client-2">
                             </div>
                             <div class="sponsor-company-container grid place-items-center ">
-                                <img src="./img/h3-client-4.png" width="100%" height="100%" alt="h3-client-2">
+                                <img src="../img/h3-client-4.png" width="100%" height="100%" alt="h3-client-2">
                             </div>
                             <div class="sponsor-company-container grid place-items-center ">
-                                <img src="./img/h3-client-5.png" width="100%" height="100%" alt="h3-client-2">
+                                <img src="../img/h3-client-5.png" width="100%" height="100%" alt="h3-client-2">
                             </div>
                             <div class="sponsor-company-container grid place-items-center ">
-                                <img src="./img/h3-client-1.png" width="100%" height="100%" alt="h3-client-2">
+                                <img src="../img/h3-client-1.png" width="100%" height="100%" alt="h3-client-2">
                             </div>
 
                         </div>
@@ -325,7 +206,19 @@
                         <div class=" pricing-contents-container text-center">
                             <div class="pricing-contents w-full h-full">
                                 <h2>CLASS DROP-IN</h2>
-                                <h1>$99</h1>
+                                <?php
+                                    include "config.php";
+                                    $sql = ("SELECT * FROM pricings WHERE id = 1");
+                                    $result = mysqli_query($conn , $sql) or die("connection fail");
+                                        if(mysqli_num_rows($result) > 0){
+                                            while($row = mysqli_fetch_assoc($result)){
+                                                ?>
+                                                <h1>$ <?php echo $row["price"]; ?></h1>
+                                                <?php
+                                            }
+                                        };
+                                ?>
+                                
                                 <p class="text-white">Health & Fitness Tips</p>
                                 <p>Diet Plan Included</p>
                                 <p>Membership Card</p>
@@ -335,7 +228,18 @@
                         <div class=" pricing-contents-container text-center">
                             <div class="pricing-contents w-full h-full">
                                 <h2>12 MONTH UNLIMITED</h2>
-                                <h1>$149</h1>
+                                <?php
+                                    include "config.php";
+                                    $sql = ("SELECT * FROM pricings WHERE id = 2");
+                                    $result = mysqli_query($conn , $sql) or die("connection fail");
+                                        if(mysqli_num_rows($result) > 0){
+                                            while($row = mysqli_fetch_assoc($result)){
+                                                ?>
+                                                <h1>$ <?php echo $row["price"]; ?></h1>
+                                                <?php
+                                            }
+                                        };
+                                ?>
                                 <p class="text-white">Health & Fitness Tips</p>
                                 <p class="text-white">Diet Plan Included</p>
                                 <p>Membership Card</p>
@@ -345,7 +249,18 @@
                         <div class=" pricing-contents-container text-center">
                             <div class="pricing-contents w-full h-full">
                                 <h2>6 MONTH UNLIMITED</h2>
-                                <h1>$249</h1>
+                                <?php
+                                    include "config.php";
+                                    $sql = ("SELECT * FROM pricings WHERE id = 3");
+                                    $result = mysqli_query($conn , $sql) or die("connection fail");
+                                        if(mysqli_num_rows($result) > 0){
+                                            while($row = mysqli_fetch_assoc($result)){
+                                                ?>
+                                                <h1>$ <?php echo $row["price"]; ?></h1>
+                                                <?php
+                                            }
+                                        };
+                                ?>
                                 <p class="text-white">Health & Fitness Tips</p>
                                 <p class="text-white">Diet Plan Included</p>
                                 <p class="text-white">Membership Card</p>
@@ -369,7 +284,7 @@
                     <div class="footer-cotent-header">
                         <div class="footer-img-container">
                             <div class="logo-img">
-                                <img src="./img/logo02.png" alt="">
+                                <img src="../img/logo02.png" alt="">
                             </div>
                         </div>
                     </div>
@@ -413,5 +328,6 @@
             </div>
         </div>
     </footer>
+
 </body>
 </html>

@@ -30,27 +30,19 @@ angles.forEach(function(angle){
     })
 })
 
-// getModelCloseBtn.addEventListener("click",()=>{
-//     getModelBox.classList.remove("modelBox-container-ani");
-// })
-// modeladmClose.addEventListener("click",()=>{
-//     getModelBox.classList.remove("modelBox-container-ani");
-// })
-// setTimeout(()=>{
-//     getModelBox.classList.add("modelBox-container-ani");
-// },2000)
+let getmodelContainer = document.getElementById("modalBox-container");
+let closeModelContaier = document.getElementById("close-btn");
 
-// window.onclick = function(e){
-//     if(e.target === getModelBox){
-//         getModelBox.classList.remove("modelBox-container-ani");
-//     }
-// }
-// getadmBtn.addEventListener("click",function(){
-//     userLogInPage.style.display = "none";
-//     admLogInPage.style.display = "grid"
-// })
+closeModelContaier.addEventListener("click", function(){
+    getmodelContainer.style.display="none";
+})
 
-// getuserBtn.addEventListener("click",function(){
-//     userLogInPage.style.display = "grid";
-//     admLogInPage.style.display = "none"
-// })
+setTimeout(function(){
+    getmodelContainer.style.display="grid";
+},5000);
+
+window.onclick = function(e){
+    if(e.target.classList.contains("modalBox-container")){
+        getmodelContainer.style.display="none";
+    }
+}
