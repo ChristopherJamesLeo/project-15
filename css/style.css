@@ -39,13 +39,36 @@
 .nav-list .nav-list-items{
     padding: 25px 0px;
 }
-.nav-list .nav-list-items a{
+.nav-list .nav-list-items .nav-list-items-links{
     padding: 15px 10px ;
     position: relative;
     font-size: 13px;
     /* background-color: antiquewhite; */
 }
-.nav-list .nav-list-items a::before{
+
+.nav-list-items .dropdown-menu {
+    background-color: #fff;
+    width: 200%;
+    padding: 10px;
+    right: 0%;
+    top: 80%;
+    display: none;
+}
+.nav-list-items .dropdown-menu .dropdown-item{
+    width: 100%;
+    padding: 10px 0;
+    border-bottom: 1px solid green;
+}
+.nav-list-items .dropdown-menu .dropdown-item a {
+    font-weight: 700;
+}
+.nav-list-items .dropdown-menu .dropdown-item a:hover{
+    color: var(--global-main-text-and-bg-color);
+}
+.nav-list .nav-list-items:hover .dropdown-menu {
+    display: block;
+}
+.nav-list .nav-list-items .nav-list-items-links::before{
     content: "";
     width: 0%;
     height: 2px;
@@ -58,11 +81,11 @@
     transition: all 0.5s ease 0s;
 
 }
-.nav-list .nav-list-items a:hover::before,.nav-list .nav-list-items a:hover{
+.nav-list .nav-list-items .nav-list-items-links:hover::before,.nav-list .nav-list-items .nav-list-items-links:hover{
     width: 100%;
     color: var(--global-main-text-and-bg-color);
 }
-.nav-list .nav-list-items a:hover::before,.nav-list .nav-list-items i{
+.nav-list .nav-list-items .nav-list-items-links:hover::before,.nav-list .nav-list-items i{
     padding-left: 10px;
 }
 .nar-slide-toggle-btn {
@@ -417,9 +440,7 @@
     line-height: 2;
     color: var(--global-main-text-and-bg-color);
 }
-.content-heading-container p{
-    /* color: #fff; */
-}
+
 .flex-content-items-container {
     flex-wrap: wrap;
     gap: 130px;
@@ -625,4 +646,45 @@
 }
 .footer-content input:last-of-type:hover {
     opacity: 1;
+}
+
+.flex-content {
+    gap: 40px;
+}
+.content-container {
+    width: 350px;
+}
+.content-container h1 {
+    font-size: 25px;
+}
+.class-contents-container {
+    padding: 0;
+}
+.class-contents .title {
+    background-color: var(--global-main-text-and-bg-color);
+    padding: 10px 0px;
+}
+.class-contents .title h1 {
+    font-size: 35px;
+    color: black;
+    font-style: italic;
+}
+.class-contents .schedule {
+    background-color: #29282D;
+}
+.class-contents .schedule p {
+    font-size: 20px;
+    color: var(--global-main-text-and-bg-color);
+}
+.class-content h2 {
+    font-size: 40px;
+    font-style: italic;
+    color: var(--global-main-text-and-bg-color);
+}
+.calss-content-container {
+    height: 90vh;
+    background-image: url("../img/bg_image/video1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }

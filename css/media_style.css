@@ -50,10 +50,16 @@
     .footer-content-container {
         flex-direction: column;
     }
+    .contact-box {
+        flex-direction: column;
+    }
 }
 @media(max-width:640px){
     body{
         background-color:azure;
+    }
+    .contact_intro_section .intro_latter h1 {
+        font-size: 50px;
     }
     .nav-slide-container{
         width: 100%;
@@ -76,10 +82,11 @@
         line-height: 2;
         color: var(--global-main-text-and-bg-color);
     }
+
 }
 @media(max-width:400px){
-    body{
-        background-color:blueviolet;
+    .content-container {
+        width: 100%;
     }
 
 }

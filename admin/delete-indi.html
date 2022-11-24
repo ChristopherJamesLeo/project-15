@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <head>
+        <title>Control Panel</title>
+        <link rel="shortcut icon" href=".png" type="image/x-icon">
+        <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/media-style.css">
+        <link rel="stylesheet" href="../css/media-style.css">
+        
+    </head>
+</head>
+<body>
+    <!-- <menu class="main-menu flex justify-between items-center">
+        <div class="logoImg-container">
+            <div class="logo-img">
+                <img src="../img/cropped-logo02.png" width="100%" height="100%" alt="logo">
+            </div>
+        </div>
+        <nav class="navBar">
+            <ul class="nav-list flex items-center">
+                <li class="nav-list-items"><a href="#" class="font-medium uppercase tracking-wide text-white">home</a></li>
+                <li class="nav-list-items"><a href="#" class="font-medium uppercase tracking-wide text-white">About<i class="fas fa-angle-down inline-block"></i></a></li>
+                <li class="nav-list-items"><a href="#" class="font-medium uppercase tracking-wide text-white">Our Class</a></li>
+                <li class="nav-list-items"><a href="#" class="font-medium uppercase tracking-wide text-white">Pricing Table</a></li>
+                <li class="nav-list-items"><a href="#" class="font-medium uppercase tracking-wide text-white">Blog<i class="fas fa-angle-down inline-block"></i></a></li>
+                <li class="nav-list-items"><a href="#" class="font-medium uppercase tracking-wide text-white">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="nar-slide-toggle-btn">
+            <div class="btn-container">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        <div class="nav-slide-container">
+            <div class="logoAndCloseBtn-container flex justify-between items-center">
+                <div class="logoImg-container">
+                    <div class="logo-img">
+                        <img src="./img/cropped-logo02.png" width="100%" height="100%" alt="logo">
+                    </div>
+                </div>
+                <div class="close-btn">
+                    <i class="fas fa-times text-white"></i>
+                </div>
+            </div>
+            <nav class="slide-navBar">
+                <ul class="slide-nav-list">
+                    <li class="slide-nav-list-items"><a href="#" class="font-medium uppercase tracking-wide text-white border-b inline-block">home</a></li>
+                    <li class="slide-nav-list-items flex justify-between items-center"><a href="#" class="font-medium uppercase tracking-wide text-white border-b inline-block">About</a><div class="grid place-items-center border-l"><i class="fas fa-angle-down inline-block"></i></div></li>
+                    <li class="slide-nav-list-items"><a href="#" class="font-medium uppercase tracking-wide text-white border-b inline-block">Our Class</a></li>
+                    <li class="slide-nav-list-items"><a href="#" class="font-medium uppercase tracking-wide text-white border-b inline-block">Pricing Table</a></li>
+                    <li class="slide-nav-list-items flex justify-between items-center"><a href="#" class="font-medium uppercase tracking-wide text-white border-b inline-block">Blog</a><div class="grid place-items-center border-l"><i class="fas fa-angle-down inline-block"></i></div></li>
+                    <li class="slide-nav-list-items"><a href="#" class="font-medium uppercase tracking-wide text-white inline-block">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </menu> -->
+    <div class="dele-indi-container">
+        <div class="dele-indi-form-container">
+
+            <form action="" method="" class="search-id">
+                <div class="form-group">
+                    <label for="">Search ID</label><br>
+                    <input type="text" name="firstname" id="firstname" class="form-control" placeholder="Firstname">
+                </div>
+                <input type="submit" name="submit-id" class="rounded-md bg-stone-500" value="submit">
+            </form>
+            <div class="delete-content-heading text-center">
+                <h1 class="font-bold">Delete Id</h1>
+            </div>
+            <form action="" method="get" class="deleteForm">
+                <input type="hidden" name="id" id="id" value="id">
+                <div class="form-group">
+                    <label for="">First Name</label><br>
+                    <input type="text" name="firstname" id="firstname" class="form-control" placeholder="Firstname" value="First Name">
+                </div>
+                <div class="form-group">
+                    <label for="">Last Name</label><br>
+                    <input type="text" name="lastname" id="lastname" class="form-control" placeholder="lastname" value="Last Name">
+                </div>
+                <div class="form-group">
+                    <label for="">Email</label><br>
+                    <input type="email" name="email" id="email" class="form-control" placeholder="email" value="email">
+                </div>
+                <div class="form-group">
+                    <label for="">Message</label><br>
+                    <textarea name="usermessage" id="usermessage" class="usermessage"></textarea>
+                </div>
+                <a href="#" class="del-back rounded-md bg-lime-300">BACK</a>
+                <a href="#" class="del-submit rounded-md bg-red-300">DELETE</a>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
