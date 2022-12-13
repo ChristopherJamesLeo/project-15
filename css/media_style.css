@@ -3,9 +3,20 @@
         background-color: aqua;
     }
 }
-@media(max-width:800px){
+@media(max-width:768px){
     body{
         background-color:aquamarine;
+    }
+    .section-content {
+        width: 70%;
+    }
+    .section-content h3{
+        color: var(--global-main-text-and-bg-color);
+        font-size: 20px;
+    }
+    .section-content h1{
+        color: var(--global-main-text-and-bg-color);
+        font-size: 50px;
     }
     .navBar {
         display: none;
@@ -13,20 +24,69 @@
     .nar-slide-toggle-btn {
         display: block;
     }
+    .sec-section-content {
+        flex-direction: column;
+    }
+    .sec-content {
+        width: 100%;
+        height: 450px;
+    }
+    .flex-content {
+        padding: 10px;
+        flex-direction: column;
+    }
+    .gym-img-main {
+        transform: scale(1);
+    }
+    .flex-right-content .gym-img-back-bg {
+
+        transform: translateY(-50%) scale(0.7);
+    }
+    .pricing-contents-container {
+        background-color: #29282D;
+        width: 100%;
+        padding: 30px;
+    }
+    .footer-content-container {
+        flex-direction: column;
+    }
+    .contact-box {
+        flex-direction: column;
+    }
 }
-@media(max-width:600px){
+@media(max-width:640px){
     body{
         background-color:azure;
+    }
+    .contact_intro_section .intro_latter h1 {
+        font-size: 50px;
     }
     .nav-slide-container{
         width: 100%;
     }
+    .pricing-contents h2 {
+        font-size: 20px;
+    }
+    .pricing-contents h1 {
+        font-size: 50px;
+    }
+    .pricing-contents p{
+        font-size: 18px;
+    }
+    .flex-content-items-container {
+        gap: 20px;
+        padding: 20px;
+    }
+    .content-heading-container h1{
+        font-size: 20px;
+        line-height: 2;
+        color: var(--global-main-text-and-bg-color);
+    }
+
 }
 @media(max-width:400px){
-    body{
-        background-color:blueviolet;
+    .content-container {
+        width: 100%;
     }
-    /* .nav-slide-container{
-        width: 300px;
-    } */
+
 }

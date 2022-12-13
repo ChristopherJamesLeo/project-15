@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <head>
+        <title>Control Panel</title>
+        <link rel="shortcut icon" href=".png" type="image/x-icon">
+        <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/media-style.css">
+        <link rel="stylesheet" href="../css/media-style.css">
+        
+    </head>
+</head>
+<body>
+    <menu class="main-menu flex justify-between items-center">
+        <div class="logoImg-container">
+            <div class="logo-img">
+                <img src="../img/cropped-logo02.png" width="100%" height="100%" alt="logo">
+            </div>
+        </div>
+        <nav class="navBar">
+            <ul class="nav-list flex items-center">
+                <li class="nav-list-items"><a href="#" class="font-medium uppercase tracking-wide text-white">home</a></li>
+                <li class="nav-list-items"><a href="#" class="font-medium uppercase tracking-wide text-white">About<i class="fas fa-angle-down inline-block"></i></a></li>
+                <li class="nav-list-items"><a href="#" class="font-medium uppercase tracking-wide text-white">Our Class</a></li>
+                <li class="nav-list-items"><a href="#" class="font-medium uppercase tracking-wide text-white">Pricing Table</a></li>
+                <li class="nav-list-items"><a href="#" class="font-medium uppercase tracking-wide text-white">Blog<i class="fas fa-angle-down inline-block"></i></a></li>
+                <li class="nav-list-items"><a href="#" class="font-medium uppercase tracking-wide text-white">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="nar-slide-toggle-btn">
+            <div class="btn-container">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        <div class="nav-slide-container">
+            <div class="logoAndCloseBtn-container flex justify-between items-center">
+                <div class="logoImg-container">
+                    <div class="logo-img">
+                        <img src="./img/cropped-logo02.png" width="100%" height="100%" alt="logo">
+                    </div>
+                </div>
+                <div class="close-btn">
+                    <i class="fas fa-times text-white"></i>
+                </div>
+            </div>
+            <nav class="slide-navBar">
+                <ul class="slide-nav-list">
+                    <li class="slide-nav-list-items"><a href="#" class="font-medium uppercase tracking-wide text-white border-b inline-block">home</a></li>
+                    <li class="slide-nav-list-items flex justify-between items-center"><a href="#" class="font-medium uppercase tracking-wide text-white border-b inline-block">About</a><div class="grid place-items-center border-l"><i class="fas fa-angle-down inline-block"></i></div></li>
+                    <li class="slide-nav-list-items"><a href="#" class="font-medium uppercase tracking-wide text-white border-b inline-block">Our Class</a></li>
+                    <li class="slide-nav-list-items"><a href="#" class="font-medium uppercase tracking-wide text-white border-b inline-block">Pricing Table</a></li>
+                    <li class="slide-nav-list-items flex justify-between items-center"><a href="#" class="font-medium uppercase tracking-wide text-white border-b inline-block">Blog</a><div class="grid place-items-center border-l"><i class="fas fa-angle-down inline-block"></i></div></li>
+                    <li class="slide-nav-list-items"><a href="#" class="font-medium uppercase tracking-wide text-white inline-block">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </menu>
+    <div class="user-content-list">
+        <div class="user-content-table-container">
+            <table class="user-content-table table-auto border-separate">
+                <thead class="user-content-table-head">
+                    <tr class="text-center">
+                        <th>No</th>
+                        <th>ID</th>
+                        <th>firstname</th>
+                        <th>lastname</th>
+                        <th>Email</th>
+                        <th>message</th>
+                        <th>Edit</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="table-role-data">
+                        <td id="user_content_series" class="user_content_series text-center"></td>
+                        <td class="text-center">1</td>
+                        <td>aung</td>
+                        <td>aung</td>
+                        <td class="user-email-list">aung@</td>
+                        <td class="user-message">how are you</td>
+                        <td class="edit-content text-center">
+                            <a href="#"><i class="fas fa-edit"></i></a>
+                        </td>
+                        <td class="delete-content text-center">
+                            <a href="#"><i class="fas fa-trash"></i></a>
+                        </td>
+                    </tr>
+                    <tr class="table-role-data">
+                        <td id="user_content_series" class="user_content_series text-center"></td>
+                        <td class="text-center">1</td>
+                        <td>aung</td>
+                        <td>aung</td>
+                        <td class="user-email-list">aung@</td>
+                        <td class="user-message">how are you</td>
+                        <td class="edit-content text-center">
+                            <a href="#"><i class="fas fa-edit"></i></a>
+                        </td>
+                        <td class="delete-content text-center">
+                            <a href="#"><i class="fas fa-trash"></i></a>
+                        </td>
+                    </tr>
+                    <tr class="table-role-data">
+                        <td id="user_content_series" class="user_content_series text-center"></td>
+                        <td class="text-center">1</td>
+                        <td>aung</td>
+                        <td>aung</td>
+                        <td class="user-email-list">aung@</td>
+                        <td class="user-message">how are you</td>
+                        <td class="edit-content text-center">
+                            <a href="#"><i class="fas fa-edit"></i></a>
+                        </td>
+                        <td class="delete-content text-center">
+                            <a href="#"><i class="fas fa-trash"></i></a>
+                        </td>
+                    </tr>
+                    <tr class="table-role-data">
+                        <td id="user_content_series" class="user_content_series text-center"></td>
+                        <td class="text-center">1</td>
+                        <td>aung</td>
+                        <td>aung</td>
+                        <td class="user-email-list">aung@</td>
+                        <td class="user-message">how are you</td>
+                        <td class="edit-content text-center">
+                            <a href="#"><i class="fas fa-edit"></i></a>
+                        </td>
+                        <td class="delete-content text-center">
+                            <a href="#"><i class="fas fa-trash"></i></a>
+                        </td>
+                    </tr>
+                    <tr class="table-role-data">
+                        <td id="user_content_series" class="user_content_series text-center"></td>
+                        <td class="text-center">1</td>
+                        <td>aung</td>
+                        <td>aung</td>
+                        <td class="user-email-list">aung@</td>
+                        <td class="user-message">how are you</td>
+                        <td class="edit-content text-center">
+                            <a href="#"><i class="fas fa-edit"></i></a>
+                        </td>
+                        <td class="delete-content text-center">
+                            <a href="#"><i class="fas fa-trash"></i></a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script>
+        let getSeriesTag = document.querySelectorAll(".user_content_series");
+        console.log(getSeriesTag)
+        for( let i = 0 ; i < getSeriesTag.length ; i++){
+            console.log(i+1)
+            getSeriesTag[i].innerText = i+1;
+        }
+    </script>
+</body>
+</html>
